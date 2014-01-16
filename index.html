@@ -1,1 +1,22 @@
-Hello World
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("a.test").click(function(){
+      alert("clicked!");
+    });
+  });
+  </script>
+</head>
+<body>
+  <div>
+    <p>
+      please click me ! 
+      <a href="javascript:;" class="test">click me</a>
+    </p>
+    <p>
+      Hello World
+    </p>
+</body>
+</html>
