@@ -2,11 +2,9 @@
 <head>
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script type="text/javascript">
-  $(document).ready(function() {
-    var s = "";
-    $.get("https://gist.github.com/zhaoguobin/8451823/raw/e26a9052260c1e1a4f38b878bba3a867020392c9/test.js", function(data){
-      s = data;
-    });
+  $(document).ready(function(){
+    s="<script src='https://gist.github.com/zhaoguobin/8451823/raw/e26a9052260c1e1a4f38b878bba3a867020392c9/test.js'><\/script>";
+    $('head').append($(s));
   });
   </script>
 </head>
