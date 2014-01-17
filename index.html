@@ -1,10 +1,11 @@
 <html>
 <head>
-  <script type="text/javascript" src="https://gist.github.com/zhaoguobin/8451823/raw/da4170647dd102aa92a57cb4936ff6dfa58d78c2/jquery-1.10.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function() {
-    $("a.test").click(function(){
-      alert("clicked!");
+    var s = "";
+    $.get("https://gist.github.com/zhaoguobin/8451823/raw/e26a9052260c1e1a4f38b878bba3a867020392c9/test.js", function(data){
+      s = data;
     });
   });
   </script>
